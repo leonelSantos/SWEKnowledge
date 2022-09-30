@@ -1,11 +1,9 @@
 import React from "react";
 
-function BigO(){
+export default function BigO(){
     return (
         <div>
-            <title>Big-O Notation</title>
+            <h1>Big-O Notation</h1>
         </div>
     )
 }
-
-export default BigO

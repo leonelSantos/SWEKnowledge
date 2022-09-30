@@ -16,12 +16,12 @@
 
 
   a{
-    color: azure;
+    color: antiquewhite;
     font-size: 30px;
   }
 
-  h1{
-    color: azure;
+  h2{
+    color: antiquewhite;
   }
   
 .div1 { grid-area: 1 / 1 / 2 / 2; }

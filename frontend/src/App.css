@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  margin: 1rem;
+  text-align: center;
+}
+.dsa{
+  color: antiquewhite !important;
+}
+
+#collasible-nav-dropdown {
+  color: antiquewhite !important;
+}
+
+.nav-link.active{
+  color: antiquewhite !important;
+}
+.nav-link{
+  color: black !important;
+}

@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function LeetCode(){
+export default function Patterns(){
     return (
         <div>
-            <h1>Leet Code</h1>
+            <h1>Common Patterns</h1>
         </div>
     )
 }

@@ -1,11 +1,9 @@
 import React from "react";
 
-function DataStructures(){
+export default function DataStructures(){
     return (
         <div>
-            <title>Data Structures</title>
+            <h1>Data Structures</h1>
         </div>
     )
 }
-
-export default DataStructures
