@@ -1,0 +1,28 @@
+h3{
+    color: black !important;
+    font-weight: bold; 
+    font-family:cursive;
+    font-size: 50px;
+}
+
+p{
+    color: black !important;
+    font-size: 30px;
+}
+
+img {  
+    max-width: 100%;  
+    height: auto;  
+    }  
+
+.second-p{
+    color: white !important;
+    font-size: 30px;
+}
+
+.second-h3{
+    color: white !important;
+    font-weight: bold; 
+    font-family:cursive;
+    font-size: 50px;
+}

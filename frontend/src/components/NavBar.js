@@ -7,6 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 //import { useMatch, useResolvedPath, Link } from "react-router-dom";
 import {Link} from "react-router-dom";
+import sun from "/Users/retina15/Desktop/SWEKnowledge/frontend/src/assets/sun.jpeg";
 
 function NavBar() {
 return(
@@ -14,7 +15,16 @@ return(
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
             <Navbar.Brand>
-              <Link className='nav-link active' to="/home">SWE Knowledge</Link>
+            <Link className='nav-link active' to="/home">
+              <img
+                alt="SWE Knowledge"
+                src={sun}
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+              />{' '}
+              SWE Knowledge
+             </Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
