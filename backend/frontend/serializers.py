@@ -5,4 +5,9 @@ class LeetCodeSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = LeetCode 
-        fields = ('name', 'description', 'solution')
+        fields = ('name', 
+                    'url', 
+                    'dsaType', 
+                    'difficulty', 
+                    'explanation', 
+                    'solution' )
