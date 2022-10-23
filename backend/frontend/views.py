@@ -28,20 +28,23 @@ def leetCode_list(request):
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-@api_view(['PUT', 'DELETE'])
-def leetCode_detail(request, pk):
-    try:
-        leetCode = LeetCode.objects.get(pk=pk)
-    except LeetCode.DoesNotExist:
-        return Response(status=status.HTTP_404_NOT_FOUND)
+@api_view(['GET'])
+def filterByID(request, pk):
+    if request.method == 'GET':
+        leetCode = LeetCode.objects.filter(id = pk)
+        serializer = LeetCodeSerializer(leetCode, context={'id': pk}, many=True)
+        return Response(serializer.data)
 
-    if request.method == 'PUT':
-        serializer = LeetCodeSerializer(leetCode, data=request.data,context={'request': request})
-        if serializer.is_valid():
-            serializer.save()
-            return Response(status=status.HTTP_204_NO_CONTENT)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+@api_view(['GET'])
+def filterByDSA(request, dsa):
+    if request.method == 'GET':
+        leetCode = LeetCode.objects.filter(dsaType = dsa)
+        serializer = LeetCodeSerializer(leetCode, context={'dsaType': dsa}, many=True)
+        return Response(serializer.data)
 
-    elif request.method == 'DELETE':
-        leetCode.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
+@api_view(['GET'])
+def filterByDifficulty(request, diff):
+    if request.method == 'GET':
+        leetCode = LeetCode.objects.filter(difficulty = diff)
+        serializer = LeetCodeSerializer(leetCode, context={'difficulty': diff}, many=True)
+        return Response(serializer.data)
