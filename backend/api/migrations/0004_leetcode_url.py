@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("frontend", "0003_remove_leetcode_type_leetcode_dsatype"),
+        ("api", "0003_remove_leetcode_type_leetcode_dsatype"),
     ]
 
     operations = [

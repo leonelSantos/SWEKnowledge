@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'frontend.apps.FrontendConfig',
+    'api.apps.apiConfig',
     "corsheaders",
     "rest_framework",
     "reset_migrations",
@@ -56,10 +56,10 @@ MIDDLEWARE = [
 ]
 
 # Allows requests to our Django application from other origins using CORS Middleware
-#CORS_ORIGIN_ALLOW_ALL = False
-#CORS_ORIGIN_WHITELIST = (
-#    'http://localhost:8081',
-#)
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:8000',
+)
 
 ROOT_URLCONF = "backend.urls"
 

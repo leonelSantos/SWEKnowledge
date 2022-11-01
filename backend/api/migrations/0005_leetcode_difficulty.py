@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("frontend", "0004_leetcode_url"),
+        ("api", "0004_leetcode_url"),
     ]
 
     operations = [

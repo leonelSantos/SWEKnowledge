@@ -1,9 +1,8 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import CodeEditor from './CodeEditor';
 
-export default function EditorModal(props) {
+export default function ExplanationModal(props) {
   return (
     <Modal
       {...props}
@@ -17,7 +16,7 @@ export default function EditorModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <CodeEditor solution = {props.solution}/>
+        {props.explanation}
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>

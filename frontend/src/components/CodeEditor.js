@@ -7,23 +7,14 @@ function onChange(newValue) {
     console.log("change", newValue);
   }
 
-export default function CodeEditor(){
-    const solution = `class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
-        hashset = set()
-
-        for n in nums:
-            if n in hashset:
-                return True
-            hashset.add(n)
-        return False
-    `
+export default function CodeEditor(props){
+   
     return( 
         <div>
             <AceEditor
                 mode="python"
                 theme="monokai"
-                value = {solution}
+                value = {props.solution}
                 onChange={onChange}
                 name="UNIQUE_ID_OF_DIV"
                 editorProps={{ $blockScrolling: true }}
