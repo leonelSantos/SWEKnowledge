@@ -4,4 +4,4 @@ SWE Knowledge is a web application created to help individuals study for Softwar
 - A thorough explanation of different Data Structures and Algorithms.
 - And in depth description of Big-O Notation.
 
-<img src="walkthrough.gif" width=500><br>
+<img src="walkthrough.gif" width=1000><br>
