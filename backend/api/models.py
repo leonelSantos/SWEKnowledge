@@ -12,3 +12,30 @@ class LeetCode(models.Model):
 
     def __str__(self):
         return self.name
+
+class PageCode(models.Model):
+    order = models.PositiveSmallIntegerField()
+    pageName = models.CharField("PageName", max_length=240)
+    nameAndOrder = models.CharField("PageName", max_length=240)
+    code = models.TextField()
+
+    def __str__(self):
+        return self.nameAndOrder
+
+class PageParagraph(models.Model):
+    order = models.PositiveSmallIntegerField()
+    pageName = models.CharField("PageName", max_length=240)
+    nameAndOrder = models.CharField("PageName", max_length=240)
+    paragraph = models.TextField()
+
+    def __str__(self):
+        return self.nameAndOrder
+
+class PageTitles(models.Model):
+    order = models.PositiveSmallIntegerField()
+    pageName = models.CharField("PageName", max_length=240)
+    nameAndOrder = models.CharField("PageName", max_length=240)
+    titles = models.TextField()
+
+    def __str__(self):
+        return self.nameAndOrder

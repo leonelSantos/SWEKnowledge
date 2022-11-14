@@ -1,28 +1,11 @@
-h3{
-    color: black !important;
-    font-weight: bold; 
-    font-family:cursive;
-    font-size: 50px;
-}
-
-p{
-    color: black !important;
-    font-size: 30px;
-}
-
-img {  
-    max-width: 100%;  
-    height: auto;  
-    }  
-
-.second-p{
-    color: white !important;
-    font-size: 30px;
-}
-
-.second-h3{
-    color: white !important;
-    font-weight: bold; 
-    font-family:cursive;
-    font-size: 50px;
-}
+/* Default height for small devices */
+#intro-example {
+    height: 400px;
+  }
+  
+  /* Height for devices larger than 992px */
+  @media (min-width: 992px) {
+    #intro-example {
+      height: 100vh;
+    }
+  }

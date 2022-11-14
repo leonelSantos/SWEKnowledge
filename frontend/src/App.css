@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Euclid Circular A'
 }
 
 .App-logo {
@@ -77,4 +78,9 @@ h3.question {
   height: 100%;
   width: 100%;
   font-size: 20px;
+}
+
+p {
+  white-space: pre-line;
+  font-family: 'Euclid Circular A';
 }
