@@ -10,23 +10,36 @@ export default function List(props){
     const [modalShow, setModalShow] = React.useState(false);
     const [explanationShow, setExplanationShow] = React.useState(false);
 
+    function color(color){
+        if (color === "Easy"){
+            return "success";
+        }
+        else if (color === "Medium"){
+            return "warning";
+        }
+        else{
+            return "danger";
+        }
+    };
+
     return (
         <ListGroup variant="flush">
         <ListGroup.Item>
             <Row>
-                <Col> <Button variant="success" size ='lg' href = {props.url}> {props.id}. {props.name} </Button>{' '} </Col>
-                <Col> <Button variant="outline-primary" size ='lg' onClick={() => setModalShow(true)}> Solution </Button>{' '} </Col>
+                <Col> <Button variant="light" size ='lg' href = {props.url}> {props.id}. {props.name} </Button>{' '} </Col>
+                <Col> <Button variant="primary" size ='lg' onClick={() => setModalShow(true)}> Solution </Button>{' '} </Col>
                 <EditorModal question = {props.name} solution = {props.solution} show={modalShow} onHide={() => setModalShow(false)}/>
-                <Col> <Button variant="outline-dark" size ='lg' onClick={() => setExplanationShow(true)} >Explanation</Button> </Col>
-                <ExplanationModal question = {props.name} explanation = {props.explanation} show={explanationShow} onHide={() => setExplanationShow(false)}/>
+                <Col> <Button variant= {color(props.difficulty)} size ='lg' > {props.difficulty} </Button>{' '} </Col>
             </Row>
+            <hr></hr>
         </ListGroup.Item>
         </ListGroup>
   )
 }
 
 /*
-
+<Col> <Button variant="outline-dark" size ='lg' onClick={() => setExplanationShow(true)} >Explanation</Button> </Col>
+<ExplanationModal question = {props.name} explanation = {props.explanation} show={explanationShow} onHide={() => setExplanationShow(false)}/>
 
 
 function handleClick(){

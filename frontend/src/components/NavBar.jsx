@@ -38,12 +38,10 @@ return(
                   <NavDropdown.Item href="#action/3.2">
                     <Link className='nav-link' to="/algorithms">Algorithms</Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    <Link className='nav-link' to="/patterns">Common Patterns</Link>
-                  </NavDropdown.Item>
+                  
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action/3.4">
-                    <Link className='nav-link' to="/bigo">Big-O</Link>
+                    <Link className='nav-link' to="/bigo">Big-O Notation</Link>
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav>
@@ -75,6 +73,10 @@ export default NavBar;
       </Link>
     </li>
   )
+
+  <NavDropdown.Item href="#action/3.3">
+                    <Link className='nav-link' to="/patterns">Common Patterns</Link>
+                  </NavDropdown.Item>
 }*/
 
 //<CustomLink to="/home">Home</CustomLink>

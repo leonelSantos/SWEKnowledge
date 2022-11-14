@@ -16,28 +16,28 @@ export default function DSIndex(){
                 <MDBCardImage position='top' alt='...' src={tree} />
                 <MDBListGroup flush>
                     <MDBListGroupItem>
-                        <MDBCardLink href='/lists'>Lists/ Arrays</MDBCardLink>
+                        <MDBCardLink href='/lists' className="text-dark">Lists</MDBCardLink>
                     </MDBListGroupItem>
                     <MDBListGroupItem>
-                        <MDBCardLink href='/queue'>Queues</MDBCardLink>
+                        <MDBCardLink href='/linkedlist' className="text-dark">Linked Lists</MDBCardLink>
                     </MDBListGroupItem>
                     <MDBListGroupItem>
-                        <MDBCardLink href='/stack'>Stacks</MDBCardLink>
+                        <MDBCardLink href='/stack' className="text-dark">Stacks</MDBCardLink>
                     </MDBListGroupItem>
                     <MDBListGroupItem>
-                        <MDBCardLink href='/linkedlist'>Linked Lists</MDBCardLink>
+                        <MDBCardLink href='/queue' className="text-dark">Queues</MDBCardLink>
                     </MDBListGroupItem>
                     <MDBListGroupItem>
-                        <MDBCardLink href='/hashtable'>Hash Table / Dictionary</MDBCardLink>
+                        <MDBCardLink href='/hashtable' className="text-dark">Hash Table</MDBCardLink>
                     </MDBListGroupItem>
                     <MDBListGroupItem>
-                        <MDBCardLink href='/heap'>Heap</MDBCardLink>
+                        <MDBCardLink href='/heap' className="text-dark">Heap</MDBCardLink>
                     </MDBListGroupItem>
                     <MDBListGroupItem>
-                        <MDBCardLink href='/tree'>Trees</MDBCardLink>
+                        <MDBCardLink href='/tree' className="text-dark">Trees</MDBCardLink>
                     </MDBListGroupItem>
                     <MDBListGroupItem>
-                        <MDBCardLink href='/graphs'>Graphs</MDBCardLink>
+                        <MDBCardLink href='/graphs' className="text-dark">Graphs</MDBCardLink>
                     </MDBListGroupItem>
                 </MDBListGroup>
             </MDBCard>

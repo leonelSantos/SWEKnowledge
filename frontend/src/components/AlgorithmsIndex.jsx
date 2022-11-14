@@ -7,7 +7,7 @@ import {
     MDBListGroup,
     MDBListGroupItem
   } from 'mdb-react-ui-kit';
-import algo from '/Users/retina15/Desktop/SWEKnowledge/frontend/src/assets/block.png';
+import algo from '/Users/retina15/Desktop/SWEKnowledge/frontend/src/assets/algorithms.jpeg';
 
 export default function AlgoIndex(){
     return (
@@ -16,28 +16,28 @@ export default function AlgoIndex(){
                 <MDBCardImage position='top' alt='...' src={algo} />
                 <MDBListGroup flush>
                     <MDBListGroupItem>
-                        <MDBCardLink href='/arrays'>Greedy</MDBCardLink>
+                        <MDBCardLink href='/greedy' className="text-dark">Greedy</MDBCardLink>
                     </MDBListGroupItem>
                     <MDBListGroupItem>
-                        <MDBCardLink href='/queue'>Merge Sort</MDBCardLink>
+                        <MDBCardLink href='/mergeSort' className="text-dark">Merge Sort</MDBCardLink>
                     </MDBListGroupItem>
                     <MDBListGroupItem>
-                        <MDBCardLink href='/stack'>Dynamic Programming</MDBCardLink>
+                        <MDBCardLink href='/dynProg' className="text-dark">Dynamic Programming</MDBCardLink>
                     </MDBListGroupItem>
                     <MDBListGroupItem>
-                        <MDBCardLink href='/linkedlist'>Backtracking</MDBCardLink>
+                        <MDBCardLink href='/backTrack' className="text-dark">Backtracking</MDBCardLink>
                     </MDBListGroupItem>
                     <MDBListGroupItem>
-                        <MDBCardLink href='/hashtable'>Binary Search</MDBCardLink>
+                        <MDBCardLink href='/binSearch' className="text-dark">Binary Search</MDBCardLink>
                     </MDBListGroupItem>
                     <MDBListGroupItem>
-                        <MDBCardLink href='/heap'>Breadth First Search</MDBCardLink>
+                        <MDBCardLink href='/bfs' className="text-dark">Breadth First Search</MDBCardLink>
                     </MDBListGroupItem>
                     <MDBListGroupItem>
-                        <MDBCardLink href='/tree'>Depth First Search</MDBCardLink>
+                        <MDBCardLink href='/dfs' className="text-dark">Depth First Search</MDBCardLink>
                     </MDBListGroupItem>
                     <MDBListGroupItem>
-                        <MDBCardLink href='/graphs'>Divide & Conquer</MDBCardLink>
+                        <MDBCardLink href='/divideConq' className="text-dark">Divide & Conquer</MDBCardLink>
                     </MDBListGroupItem>
                 </MDBListGroup>
             </MDBCard>
